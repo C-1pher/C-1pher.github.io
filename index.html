@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CypherX - Intelligent Cloud Spending Optimizer</title>
+    <link rel="icon" type="image/x-icon" href="/icon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-color: #000000;
             --secondary-color: #8392a5;
-            --text-color: #ffffff;
-            --background-gradient: linear-gradient(135deg, var(--primary-color)40%, var(--secondary-color));
+            --text-color: #b2bdcb;
+            --background-gradient: linear-gradient(35deg, var(--primary-color)40%, var(--secondary-color));
+        }
+        @font-face {
+            font-family: 'MonaspaceXenon-Bold';
+            src: url('MonaspaceKrypton-Bold.woff');
         }
         @keyframes gradientAnimation {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
@@ -38,22 +37,24 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            min-height: 95vh; /* Reduced from 100vh to 95vh */
+            font-family: monospace;
+            font-size: 1.9rem; /* Slightly reduced from 2rem */
         }
         .container {
             text-align: center;
-            padding: 3rem;
+            padding: 1.8rem; /* Slightly reduced from 2rem */
             background-color: rgba(255, 255, 255, 0.05);
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             backdrop-filter: blur(10px);
-            max-width: 600px;
-            width: 90%;
+            max-width: 880px; /* Slightly reduced from 900px */
+            width: 95%;
             animation: fadeIn 1s ease-out;
         }
         h1 {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
+            font-size: 2.4rem; /* Slightly reduced from 2.5rem */
+            margin-bottom: 0.9rem; /* Slightly reduced from 1rem */
             text-transform: uppercase;
             letter-spacing: 2px;
             background: var(--background-gradient);
@@ -64,18 +65,18 @@
             animation: fadeIn 1s ease-out 0.2s both;
         }
         p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            line-height: 1.6;
+            font-size: 1.15rem; /* Slightly reduced from 1.2rem */
+            margin-bottom: 1.4rem; /* Slightly reduced from 1.5rem */
+            line-height: 1.35; /* Slightly reduced from 1.4 */
             animation: fadeIn 1s ease-out 0.4s both;
         }
         .cta-button {
             display: inline-block;
             background: var(--background-gradient);
             color: var(--text-color);
-            padding: 15px 30px;
+            padding: 11px 23px; /* Slightly reduced from 12px 25px */
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1.05rem; /* Slightly reduced from 1.1rem */
             font-weight: bold;
             border-radius: 50px;
             transition: all 0.3s ease;
@@ -91,31 +92,33 @@
         .features {
             display: flex;
             justify-content: space-around;
-            margin-top: 3rem;
+            margin-top: 1.9rem; /* Slightly reduced from 2rem */
             flex-wrap: wrap;
         }
         .feature {
-            flex: 1 1 30%;
-            margin: 1rem;
-            padding: 1rem;
+            flex: 1 1 25%;
+            margin: 0.45rem; /* Slightly reduced from 0.5rem */
+            padding: 0.7rem; /* Slightly reduced from 0.75rem */
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
             animation: fadeIn 1s ease-out 0.8s both;
         }
         .feature:hover {
-            transform: translateY(-5px);
+            transform: translateY(-3px);
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
         }
         .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            font-size: 1.9rem; /* Slightly reduced from 2rem */
+            margin-bottom: 0.7rem; /* Slightly reduced from 0.75rem */
         }
         @media (max-width: 768px) {
             .container {
-                padding: 2rem;
+                padding: 1.4rem; /* Slightly reduced from 1.5rem */
             }
             h1 {
-                font-size: 2.5rem;
+                font-size: 1.9rem; /* Slightly reduced from 2rem */
             }
             .feature {
                 flex-basis: 100%;
@@ -125,24 +128,31 @@
 </head>
 <body>
     <div class="container">
-        <h1>CypherX:</h1>
-        <p>Experience the future of development with our cutting-edge, AI-enhanced Cloud-based VS Code instances.</p>
-        <p>Be among the first to shape the next generation of secure coding environments. Limited beta access - act now!</p>
-        <a href="#" class="cta-button">Claim Your Exclusive Beta Access</a>
+        <img src="logo.png" alt="Company Logo" class="logo" style="max-width: 290px; margin-bottom: 1.4rem; animation: fadeIn 1s ease-out 0.4s both;">
+        <p>Work faster, smarter, and more efficiently with our ready-to-go machines.</p>
+        <p>AI is transforming the tech industry, and it's going to transform your experience too. Just ask Cypher, and let it handle the heavy lifting.</p>
+        <a href="https://tally.so/r/wdDD2D" class="cta-button">Get Beta Access</a>
         <div class="features">
             <div class="feature">
-                <div class="feature-icon"></div>
-                <p>AI-Powered Insights: Elevate your code quality and security</p>
+                <p><strong>AI-Powered Tools</strong>: Enhance code quality and security assessments with Cypher's intelligent assistance.</p>
             </div>
             <div class="feature">
-                <div class="feature-icon"></div>
-                <p>Advanced Analytics: Make data-driven decisions in real-time</p>
+                <p><strong>Customizable Machines</strong>: Set up your machine the way you like it, pre-configured to feel like home.</p>
             </div>
             <div class="feature">
-                <div class="feature-icon"></div>
-                <p>Optimized Efficiency: Boost productivity while reducing costs</p>
+                <p><strong>Prefer a Terminal Over VSCode?</strong>: Just one click, and you're all set—no need to launch a new machine.</p>
+            </div>
+            <div class="feature">
+                <p><strong>Moving or Going Local?</strong>: With one click, you can export your entire setup as a Docker image to use anywhere else.</p>
+            </div>
+            <div class="feature">
+                <p><strong>Need GPU Power?</strong>: Just ask, and it's available for AI or any other use case.</p>
+            </div>
+            <div class="feature">
+                <p><strong>Secure AI Interaction</strong>: Cypher doesn't access your files unless you tell it to. Place what you want to share in the 'Data' folder in $HOME, and Cypher will assist you based on those files.</p>
             </div>
         </div>
     </div>
 </body>
+
 </html>
